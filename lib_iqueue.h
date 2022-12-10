@@ -29,8 +29,8 @@
 * Preprocessor Definitions & Macros
 ******************************************************************************/
 
-#ifndef LIB_IQUEUE_H_
-#define LIB_IQUEUE_H_
+#ifndef LIBRARIES_INC_LIB_IQUEUE_H_
+#define LIBRARIES_INC_LIB_IQUEUE_H_
 
 /******************************************************************************
 * Includes
@@ -87,8 +87,8 @@ typedef enum
 typedef struct
 {
 	volatile void * storage;
-	volatile void * first;
-	volatile void * next;
+	volatile uintptr_t first;
+	volatile uintptr_t next;
 	volatile size_t element_size;
 	volatile uint32_t max_elements;
 }
