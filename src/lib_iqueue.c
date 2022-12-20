@@ -59,7 +59,7 @@ i_status iqueue_init(iqueue_t* _queue, int _max_elements, size_t _element_size, 
 		_queue->element_size = _element_size;
 		_queue->max_elements = _max_elements;
 		_queue->first = 0;
-		_queue->next =  _storage;
+		_queue->next =  (uintptr_t)_storage;
 		_queue->storage = _storage;
 		return I_OK;
 	}
@@ -68,7 +68,7 @@ i_status iqueue_init(iqueue_t* _queue, int _max_elements, size_t _element_size, 
 
 volatile void* iqueue_get_next_enqueue(iqueue_t* _queue)
 {
-	return _queue->next;
+	return (void*)_queue->next;
 }
 
 i_status iqueue_advance_next(iqueue_t* _queue)
@@ -98,7 +98,7 @@ i_status iqueue_enqueue(iqueue_t* _queue, void* _element)
 
 i_status iqueue_dequeue(iqueue_t* _queue, void* _element)
 {
-	if (_queue->first != (void*)0)
+	if (_queue->first != 0)
 	{
 		memmove((void*)_element, (void*)_queue->first, _queue->element_size);
 		_queue->first = _queue->first + _queue->element_size == (uintptr_t)_queue->storage + (_queue->element_size * _queue->max_elements)

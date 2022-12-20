@@ -98,13 +98,13 @@ iqueue_t;
 * Declaration | Public Functions
 ******************************************************************************/
 
-i_status iqueue_init   (iqueue_t * _queue, int _max_elements, size_t _element_size, void * _storage);
-i_status iqueue_enqueue(iqueue_t * _queue, void * _element);
-i_status iqueue_dequeue(iqueue_t * _queue, void * _element);
-i_status iqueue_size   (iqueue_t * _queue, uint32_t * _size);
-i_status iqueue_advance_next(iqueue_t * _queue);
-volatile void* iqueue_get_next_enqueue(iqueue_t * _queue);
-void* iqueue_dequeue_fast(iqueue_t * _queue);
+extern i_status iqueue_init   (iqueue_t * _queue, int _max_elements, size_t _element_size, void * _storage);
+extern i_status iqueue_enqueue(iqueue_t * _queue, void * _element);
+extern i_status iqueue_dequeue(iqueue_t * _queue, void * _element);
+extern i_status iqueue_size   (iqueue_t * _queue, uint32_t * _size);
+extern i_status iqueue_advance_next(iqueue_t * _queue);
+extern volatile void* iqueue_get_next_enqueue(iqueue_t * _queue);
+extern void* iqueue_dequeue_fast(iqueue_t * _queue);
 
 /******************************************************************************
 * EOF - NO CODE AFTER THIS LINE

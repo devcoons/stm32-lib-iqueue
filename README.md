@@ -1,11 +1,10 @@
 # IQUEUE LIBRARY
+![C/C++ CI](https://github.com/devcoons/stm32-lib-iqueue/workflows/C/C++%20CI/badge.svg)  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/917370c0758748ac8fa5c1c56e58d5cc)](https://www.codacy.com/gh/devcoons/stm32-lib-iqueue/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=devcoons/stm32-lib-iqueue&amp;utm_campaign=Badge_Grade)
+
+*Compiler flags: **-O3 -Wfatal-errors -Wall -std=c11***
 
 Library for creating and manage queues.
 
-## Supported Hardware
-
-- NUCLEO-H745ZI-Q
-- NUCLEO-L552ZE-Q
 
 ## Functions Guide
 
@@ -31,4 +30,3 @@ Library for creating and manage queues.
 
 
 ```
-
