@@ -4,11 +4,11 @@ on:
   push:
     branches:    
       # Push events on master branch
-      - master
+      - main
   pull_request:
     branches:    
       # Push events on master branch
-      - master
+      - main
 
 jobs:
   build:
