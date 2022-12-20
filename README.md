@@ -27,6 +27,33 @@ Library for creating and manage queues.
 ## Example
 
 ```C
+typedef struct 
+{
+   uint8_t a[8];
+   uint8_t b[8];
+}data_t;
 
+...
+...
+
+uint8_t storage[256];
+iqueue_t queue;	
+
+...
+...
+
+iqueue_init(&queue, 16,	sizeof(data_t), storage);
+
+...
+...
+
+data_t d;
+iqueue_enqueue(&queue,&d);
+
+...
+...
+
+data_t r;
+iqueue_dequeue(&queue,&r);
 
 ```
