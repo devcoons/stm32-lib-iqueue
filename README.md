@@ -1,5 +1,5 @@
 # IQUEUE LIBRARY
-![C/C++ CI](https://github.com/devcoons/stm32-lib-iqueue/workflows/C/C++%20CI/badge.svg)  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/917370c0758748ac8fa5c1c56e58d5cc)](https://www.codacy.com/gh/devcoons/stm32-lib-iqueue/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=devcoons/stm32-lib-iqueue&amp;utm_campaign=Badge_Grade)
+[![C/C++ CI](https://github.com/devcoons/stm32-lib-iqueue/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/devcoons/stm32-lib-iqueue/actions/workflows/build.yml)  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/917370c0758748ac8fa5c1c56e58d5cc)](https://www.codacy.com/gh/devcoons/stm32-lib-iqueue/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=devcoons/stm32-lib-iqueue&amp;utm_campaign=Badge_Grade)
 
 *Compiler flags: **-O3 -Wfatal-errors -Wall -std=c11***
 
